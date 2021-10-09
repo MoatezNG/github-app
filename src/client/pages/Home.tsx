@@ -10,7 +10,7 @@ const Home: React.FC = () => {
     <div className="App">
       <h1>{`The count is: ${count}`}</h1>
       <button type="button" onClick={() => dispatch(incrementAction())}>
-        Display Even Numbers
+        Increment
       </button>
     </div>
   );
