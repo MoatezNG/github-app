@@ -1,5 +1,12 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 2rem;
   font-family: sans-serif;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.py-1 {
+  padding: 2rem 0rem 2rem 0rem;
 }

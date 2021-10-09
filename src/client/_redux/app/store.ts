@@ -1,9 +1,9 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
-import counterReducer from '../reducers/counterReducer';
+import githubReducer from '../reducers/githubReducer';
 
 const rootReducer = combineReducers({
-  counterReducer,
+  githubReducer,
 });
 
 const store = configureStore({
