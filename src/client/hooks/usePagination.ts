@@ -10,6 +10,7 @@ export const usePagination = <T extends Record<string, any>>(
   handleNextPage: (_: React.MouseEvent<HTMLAnchorElement>, props: PaginationProps) => void;
   activePage: number;
   totalPages: number;
+  setActivePage: React.Dispatch<React.SetStateAction<number>>;
 } => {
   const [activePage, setActivePage] = useState(1);
   const [paginatedData, setPaginatedData] = useState<T[]>([]);
@@ -26,5 +27,6 @@ export const usePagination = <T extends Record<string, any>>(
     handleNextPage,
     activePage,
     totalPages: Math.ceil(data.length / limit),
+    setActivePage,
   };
 };

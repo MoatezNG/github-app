@@ -21,6 +21,7 @@ export interface Owner {
 
 export interface Repository {
   id: number;
+  marked?: boolean;
   node_id: string;
   name: string;
   full_name: string;
