@@ -1,6 +1,8 @@
+import store from 'client/_redux/app/store';
 import express from 'express';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
+import { Provider } from 'react-redux';
 import { StaticRouter } from 'react-router-dom';
 import backendRoutes from 'server/routes';
 
@@ -38,7 +40,9 @@ export const renderApp = (req: express.Request, res: express.Response) => {
 
   const markup = renderToString(
     <StaticRouter context={context} location={req.url}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </StaticRouter>,
   );
 
