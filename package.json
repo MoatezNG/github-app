@@ -1,7 +1,6 @@
 {
-  "name": "think_it_gaming_chart",
+  "name": "razzle-boiler-plate",
   "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
     "start:tsc": "tsc -b -w --preserveWatchOutput",
     "start": "concurrently \"yarn start:tsc\" \"razzle start\"",
