@@ -50,7 +50,10 @@ export const githubSlice = createSlice({
       state.loading = false;
     },
 
-    // search
+    /**
+     * @description search reducer
+    */
+
     [getSearchedRepositories.pending.type]: (state) => {
       state.loading = true;
     },
