@@ -21,6 +21,7 @@ const RepositoryCard: React.FC<RepositoryCardProps> = ({
         <Card.Header>
           <div>
             <Icon
+              data-testid="favorite-icon"
               bordered
               color={marked ? 'yellow' : 'teal'}
               onClick={() => onFavorite(id)}
@@ -29,13 +30,13 @@ const RepositoryCard: React.FC<RepositoryCardProps> = ({
             {name}
           </div>
         </Card.Header>
-
         <Card.Meta>{full_name}</Card.Meta>
         <Link to={{ pathname: html_url }} target="_blank">
           {html_url}
         </Link>
         <Card.Description>{description}</Card.Description>
         <Button
+          data-testid="show-more"
           onClick={() => showMoreDetails(repository)}
           floated="right"
           size="mini"

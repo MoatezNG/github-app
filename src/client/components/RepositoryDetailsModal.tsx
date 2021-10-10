@@ -27,32 +27,32 @@ const RepositoryDetailsModal: React.FC<RepositoryDetailsModalProps> = ({ reposit
           <h2>{name}</h2>
           <h5>{privateRepo ? 'Private' : 'Public'}</h5>
         </Header>
-        <>{full_name}</>
+        <div>{full_name}</div>
         <Link to={{ pathname: html_url }} target="_blank">
           {html_url}
         </Link>
         <p>{description}</p>
         <div>
           Commits :
-          <Link to={{ pathname: html_url }} target="_blank">
+          <Link to={{ pathname: git_commits_url }} target="_blank">
             {` ${git_commits_url}`}
           </Link>
         </div>
         <div>
           Branches :
-          <Link to={{ pathname: html_url }} target="_blank">
+          <Link to={{ pathname: branches_url }} target="_blank">
             {` ${branches_url}`}
           </Link>
         </div>
         <div>
           Collaborators :
-          <Link to={{ pathname: html_url }} target="_blank">
+          <Link to={{ pathname: collaborators_url }} target="_blank">
             {` ${collaborators_url}`}
           </Link>
         </div>
         <div>
           Issues :
-          <Link to={{ pathname: html_url }} target="_blank">
+          <Link to={{ pathname: issues_url }} target="_blank">
             {` ${issues_url}`}
           </Link>
         </div>
