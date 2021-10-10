@@ -1,5 +1,5 @@
 {
-  "name": "razzle-boiler-plate",
+  "name": "github-app",
   "version": "1.0.0",
   "scripts": {
     "start:tsc": "tsc -b -w --preserveWatchOutput",
