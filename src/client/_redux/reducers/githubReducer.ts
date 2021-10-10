@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { getPublicRepositories, getSearchedRepositories } from 'client/actions/github';
+import { getPublicRepositories, getSearchedRepositories } from 'client/_redux/actions/github';
 import { SortingValues } from 'client/constants/sortOptions';
 import { Repository } from 'models/Repository';
 import { PaginatedResponse } from 'types/utils';

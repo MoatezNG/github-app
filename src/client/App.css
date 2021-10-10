@@ -14,3 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.row {
+  display: flex;
+  flex-direction: row;
+}
